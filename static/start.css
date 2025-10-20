@@ -1,60 +1,59 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #00b4d8, #90e0ef);
-  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #90caf9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  text-align: center;
-}
-
-nav {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
 }
 
 .container {
-  margin-top: 10%;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
+  padding: 40px;
   border-radius: 15px;
-  display: inline-block;
-  padding: 30px 50px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  width: 350px;
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  color: #023e8a;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.start-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
 }
 
-select, button {
-  padding: 10px;
+.start-form input, .start-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 1em;
 }
 
-button {
-  background-color: #0077b6;
+.start-form button.btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px;
+  background: #0096c7;
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-button:hover {
-  background-color: #023e8a;
+.start-form button.btn:hover {
+  background: #023e8a;
 }
-
-
 
 
