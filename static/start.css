@@ -1,0 +1,60 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #00b4d8, #90e0ef);
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.container {
+  margin-top: 10%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: inline-block;
+  padding: 30px 50px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+
+
+

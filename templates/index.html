@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Power4</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script defer src="/static/script.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="/">🏠 Accueil</a>
+    <a href="/reset">🔁 Rejouer</a>
+  </nav>
+
+  <h1>Power4</h1>
+
+  {{if .Winner}}
+    <h2 class="winner">🎉 Le joueur <span class="{{.Winner}}">{{.Winner | title}}</span> a gagné !</h2>
+  {{else}}
+    <p>Tour du joueur : <span class="{{.Player}}">{{.Player | title}}</span></p>
+  {{end}}
+
+  <div class="grid">
+    {{range $i, $row := .Grid}}
+      <div class="row">
+        {{range $j, $cell := $row}}
+          <div class="cell" data-col="{{$j}}">
+            {{if eq $cell "red"}}<div class="token red"></div>{{end}}
+            {{if eq $cell "yellow"}}<div class="token yellow"></div>{{end}}
+          </div>
+        {{end}}
+      </div>
+    {{end}}
+  </div>
+
+  {{if not .Winner}}
+  <div class="controls">
+    {{range $i := (seq 0 (sub1 (len (index .Grid 0))))}}
+      <a href="/play?col={{$i}}" class="drop">⬇️</a>
+    {{end}}
+  </div>
+  {{end}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+

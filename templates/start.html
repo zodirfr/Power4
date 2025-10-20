@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Power4 - Démarrage</title>
+  <link rel="stylesheet" href="/static/start.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Accueil</a>
+  </nav>
+
+  <div class="container">
+    <h1>🎮 Bienvenue sur Power4 Web</h1>
+    <form action="/start" method="POST">
+      <label for="difficulty">Choisissez la difficulté :</label>
+      <select name="difficulty" id="difficulty" required>
+        <option value="easy">Facile (6x7)</option>
+        <option value="normal">Normal (6x9)</option>
+        <option value="hard">Difficile (7x8)</option>
+      </select>
+
+      <label for="mode">Mode de jeu :</label>
+      <select name="mode" id="mode" required>
+        <option value="local">2 Joueurs</option>
+        <option value="ai">Contre l'IA</option>
+      </select>
+
+      <button type="submit" class="btn">🚀 Commencer</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
